@@ -1,6 +1,15 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   padding: 30px 0 30px;
   background-image: linear-gradient(to right, black 0 50%, #57b8ff 50% 100%);
+  transition: 0.5s;
+}
+.navbar-shrink {
+  padding: 10px 0;
 }
 
 .navbar {
@@ -29,7 +38,7 @@ header {
 
 .nav-middle ul {
   display: flex;
-  gap: 60px;
+  gap: 70px;
 }
 
 .nav-middle a {
@@ -60,6 +69,20 @@ header {
   line-height: 30px;
   border: 1px solid white;
 }
+.language  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.uz img {
+  width: 30px;
+}
+.eng img {
+  width: 30px;
+}
+
 
 .menu,
 .close {
@@ -72,7 +95,7 @@ header {
   display: none;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1110px) {
   .nav-middle ul {
     position: fixed;
     top: 0;
@@ -112,14 +135,11 @@ header {
   }
 }
 
-@media (max-width: 670px) {
-  header {
-    padding: 15px 0;
-  }
+@media (max-width: 800px) {
   .contact {
     display: none;
   }
   #dark-light img {
-    width: 35px;
+    width: 40px;
   }
 }

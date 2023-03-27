@@ -1,0 +1,108 @@
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #021823;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NTanimation {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 100px;
+}
+img {
+  width: 400px;
+  height: 400px;
+  margin-top: -500px;
+  animation: logo 3s forwards;
+}
+span {
+  margin-top: -200px;
+  animation: text 0.5s linear 0s forwards;
+  padding: 0 5px;
+}
+@keyframes logo {
+  0% {
+    margin-top: -400px;
+  }
+  50% {
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+  }
+  100% {
+    margin-top: 0px;
+    width: 400px;
+    height: 400px;
+  }
+}
+@keyframes text {
+  0% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+span:nth-child(11) {
+  animation-delay: 2.1s;
+}
+span:nth-child(10) {
+  animation-delay: 2.2s;
+}
+span:nth-child(9) {
+  animation-delay: 2.3s;
+}
+span:nth-child(8) {
+  animation-delay: 2.4s;
+}
+span:nth-child(7) {
+  animation-delay: 2.5s;
+}
+span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+span:nth-child(4) {
+  animation-delay: 2.4s;
+}
+span:nth-child(3) {
+  animation-delay: 2.3s;
+}
+span:nth-child(2) {
+  animation-delay: 2.2s;
+}
+span:nth-child(1) {
+  animation-delay: 2.1s;
+}
+
+.by {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.by h3 {
+    color: rgb(58, 58, 58);
+    font-weight: 10;
+    font-family: 'Vast Shadow', cursive;    
+}

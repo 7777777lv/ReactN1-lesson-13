@@ -17,6 +17,7 @@
   gap: 10px;
 }
 .home-left-title h4 {
+    letter-spacing: 2px;
   font-family: Orbitron;
   font-size: 16px;
   line-height: 16px;
@@ -37,8 +38,8 @@
 
 .sariq-chiziq {
   position: relative;
-  top: -110px;
   left: 215px;
+  bottom: 110px;
 }
 
 .home-left-p {
@@ -67,6 +68,8 @@
     background-color: var(--title-color);
 }
 .home-right {
+    display: flex;
+    align-items: center;
     width: 50%;
 }
 
